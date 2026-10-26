@@ -10,5 +10,5 @@
 <g font-family="Arial,sans-serif"><text x="73" y="325" font-size="43" fill="#ffffff" font-weight="700">7</text><text x="73" y="363" font-size="20" fill="#b8cbd7">Debian nodes</text>
 <text x="322" y="325" font-size="43" fill="#ffffff" font-weight="700">5</text><text x="322" y="363" font-size="20" fill="#b8cbd7">network zones</text>
 <text x="571" y="325" font-size="43" fill="#ffffff" font-weight="700">4</text><text x="571" y="363" font-size="20" fill="#b8cbd7">monitored exporters</text>
-<text x="838" y="325" font-size="43" fill="#66dac7" font-weight="700">60</text><text x="838" y="363" font-size="20" fill="#b8cbd7">automated assertions</text>
+<text x="838" y="325" font-size="43" fill="#66dac7" font-weight="700">60</text><text x="838" y="363" font-size="20" fill="#b8cbd7">core assertions</text>
 <text x="73" y="418" font-size="18" fill="#829dad">ManiRootNet · Hands-on practice portfolio</text></g></svg>

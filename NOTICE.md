@@ -7,3 +7,5 @@ The topology image is extracted from page 7 of the user-provided test project. T
 The Grafana image is an actual capture from the practice lab. The imported **Node Exporter Full** dashboard identifies its upstream project as [rfmoz/grafana-dashboards](https://github.com/rfmoz/grafana-dashboards) and [Grafana dashboard 1860](https://grafana.com/grafana/dashboards/1860).
 
 The narrative, measurements and selected evidence document this practice implementation.
+
+Verification report images are browser screenshots of reports generated from recorded test results. The Grafana and Prometheus images directly capture the running interfaces.

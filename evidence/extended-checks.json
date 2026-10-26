@@ -1,0 +1,111 @@
+{
+  "directory_e2e": {
+    "captured_utc": "2026-10-26T14:07:05.106024+00:00",
+    "tests": [
+      {
+        "test": "A1001 user1 new LDAP password establishes routed VPN access",
+        "passed": true
+      },
+      {
+        "test": "A1001 user2 new LDAP password establishes routed VPN access",
+        "passed": true
+      },
+      {
+        "test": "A1001 non-VPN user3 rejected despite valid rotated password",
+        "passed": true
+      },
+      {
+        "test": "A1002 user3 old directory password rejected",
+        "passed": true
+      },
+      {
+        "test": "A1002 user3 new LDAP password authenticates, jail and transfer verified",
+        "passed": true
+      },
+      {
+        "test": "A1002 user4 old directory password rejected",
+        "passed": true
+      },
+      {
+        "test": "A1002 user4 new LDAP password authenticates, jail and transfer verified",
+        "passed": true
+      },
+      {
+        "test": "A1002 non-FTP user5 rejected with valid rotated password",
+        "passed": true
+      },
+      {
+        "test": "A1003 user5 old directory password rejected",
+        "passed": true
+      },
+      {
+        "test": "A1003 user6 old directory password rejected",
+        "passed": true
+      },
+      {
+        "test": "A1003 user5 to user6 send and IMAP receive with new LDAP passwords",
+        "passed": true
+      },
+      {
+        "test": "A1003 user6 to user5 send and IMAP receive with new LDAP passwords",
+        "passed": true
+      },
+      {
+        "test": "A1003 non-mail user3 rejected with valid rotated password",
+        "passed": true
+      }
+    ],
+    "passed": 13,
+    "total": 13
+  },
+  "web_policy": {
+    "captured_utc": "2026-10-26T14:10:17.749683+00:00",
+    "tests": [
+      {
+        "test": "A408 redirect shenzhen.wsc",
+        "observed": "200 https://shenzhen.wsc/",
+        "passed": true
+      },
+      {
+        "test": "A408 redirect internal.shenzhen.wsc",
+        "observed": "401 https://internal.shenzhen.wsc/",
+        "passed": true
+      },
+      {
+        "test": "A409 pdf from 192.168.30.1",
+        "http_status": "200",
+        "passed": true
+      },
+      {
+        "test": "A409 csv from 192.168.30.1",
+        "http_status": "200",
+        "passed": true
+      },
+      {
+        "test": "A409 docx from 192.168.30.1",
+        "http_status": "200",
+        "passed": true
+      },
+      {
+        "test": "A409 pdf from 192.168.20.1",
+        "http_status": "403",
+        "passed": true
+      },
+      {
+        "test": "A409 csv from 192.168.20.1",
+        "http_status": "403",
+        "passed": true
+      },
+      {
+        "test": "A409 docx from 192.168.20.1",
+        "http_status": "403",
+        "passed": true
+      }
+    ],
+    "passed": 8,
+    "total": 8
+  },
+  "credential_restoration": {
+    "all_six_original_password_attributes_match": true
+  }
+}

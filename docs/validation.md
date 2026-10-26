@@ -15,6 +15,14 @@ Evidence was captured on **26 October 2026** from the running VMware practice en
 
 Negative tests distinguish protocol-level rejection from connection timeout. FTP transfer tests use a client that supports TLS session reuse.
 
+## Expanded end-to-end and web-policy checks
+
+An additional **13 / 13** assertions rotated the passwords of all six directory users, tested both VPN-group members, performed FTPS transfers for both FTP-group members and sent/received mail in both directions with the new credentials. Non-members were rejected. The exact original password attributes were restored and verified.
+
+A further **8 / 8** checks verified both HTTP-to-HTTPS redirects and all three restricted document extensions from permitted and denied source networks.
+
+[Structured expanded results](../evidence/extended-checks.json) · [Visual evidence](visual-evidence.md)
+
 ## Network and remote-access drills
 
 - Five simultaneous mixed HTTP/HTTPS connections established from one source; a sixth timed out.
@@ -46,6 +54,12 @@ Both pre-existing sample files retained their original SHA-256 hashes. A client-
 The controlled drill disabled forwarding, removed the public-DMZ route and stopped DNS and SSH protection. Ansible repaired all four drifts with no failed or unreachable hosts. A subsequent run reported zero changes.
 
 The recovery project was committed to the internal Git service and replayed from a fresh checkout. [Fresh-checkout evidence](../evidence/recovery-replay.txt) records zero changes and zero failures. Evidence records the live drift-repair and repeat-run scope.
+
+## Time reference
+
+The time reference uses upstream NTP while retaining a local fallback for isolated practice. The other three Shenzhen nodes select the internal reference. After synchronization, their measured UTC differences from the host were below one second.
+
+[Time synchronization evidence](../evidence/time-synchronization.json)
 
 ## Evidence handling
 

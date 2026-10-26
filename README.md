@@ -6,9 +6,9 @@ A seven-node Debian lab connecting Shanghai and Shenzhen, built as part of my pr
 
 This project brings routing, directory-backed access, encrypted services, monitoring, resilient storage and recovery into one working environment. The evidence follows traffic and authentication across the lab, including permitted access, rejected access and recovery after deliberate configuration drift.
 
-**60 automated assertions passed** across service access, TLS, DNS and directory integration. Additional operational drills cover VPN routing, firewall behavior, traffic shaping, RAID persistence and Ansible recovery.
+**60 core assertions passed** across service access, TLS, DNS and directory integration. A further **21 end-to-end and web-policy checks passed**, including rotated directory passwords and mail delivery. Additional operational drills cover VPN routing, firewall behavior, traffic shaping, RAID persistence and Ansible recovery.
 
-[Architecture](docs/architecture.md) · [Validation results](docs/validation.md) · [Engineering notes](docs/engineering-notes.md) · [Machine-readable evidence](evidence/validation-summary.json)
+[Visual evidence](docs/visual-evidence.md) · [Architecture](docs/architecture.md) · [Validation results](docs/validation.md) · [Engineering notes](docs/engineering-notes.md) · [Machine-readable evidence](evidence/validation-summary.json)
 
 ## What the lab demonstrates
 
@@ -33,6 +33,7 @@ Source: WorldSkills Shanghai 2026, Skill 39, Module A test project, topology on 
 | Verification | Observed result |
 | --- | --- |
 | Automated service, DNS and directory checks | **60 / 60 passed** |
+| Expanded directory and web-policy checks | **21 / 21 passed** |
 | Node Exporter coverage | **4 / 4 UP** |
 | Web connection policy | Five combined HTTP/HTTPS sessions accepted; sixth blocked for the same source |
 | Per-client web download | 6 MiB in 26.52 s, approximately **1.90 Mbit/s** |
@@ -43,6 +44,13 @@ Source: WorldSkills Shanghai 2026, Skill 39, Module A test project, topology on 
 | Recovery drill | Four injected drifts repaired; repeat run **changed=0, failed=0** |
 
 The counts refer to the checks documented in this repository. They are independent practice-lab results.
+
+## Visual test evidence
+
+[<img src="assets/identity-verification.jpg" alt="Directory test screenshot" width="48%">](docs/visual-evidence.md#directory-backed-authorization)
+[<img src="assets/storage-verification.jpg" alt="RAID5 and NFS screenshot" width="48%">](docs/visual-evidence.md#persistent-storage-and-file-integrity)
+
+[View all test images and their sources](docs/visual-evidence.md)
 
 ## Live observability
 

@@ -1,0 +1,17 @@
+{
+  "szx-gw-1": {
+    "captured_utc": "2026-10-26T14:39:42.127397+00:00",
+    "guest_minus_host_seconds": -0.12514328956604004,
+    "selected_internal_reference": "192.168.10.10"
+  },
+  "szx-srv-2": {
+    "captured_utc": "2026-10-26T14:39:42.994516+00:00",
+    "guest_minus_host_seconds": 0.006887674331665039,
+    "selected_internal_reference": "192.168.10.10"
+  },
+  "szx-srv-3": {
+    "captured_utc": "2026-10-26T14:39:51.364754+00:00",
+    "guest_minus_host_seconds": -0.36341381072998047,
+    "selected_internal_reference": "192.168.10.10"
+  }
+}

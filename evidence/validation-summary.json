@@ -338,5 +338,12 @@
       "clientAuth"
     ]
   },
-  "scope": "Counts describe the named assertions in this evidence set, not an official competition score."
+  "scope": "Counts describe the named assertions in this evidence set, not an official competition score.",
+  "expanded_assertions": {
+    "passed": 21,
+    "total": 21,
+    "directory_e2e": 13,
+    "web_redirect_and_extensions": 8,
+    "evidence": "extended-checks.json"
+  }
 }
