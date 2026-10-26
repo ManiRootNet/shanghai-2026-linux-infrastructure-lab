@@ -1,0 +1,10 @@
+*.key
+key.pem
+*.private
+.env
+*.p12
+*.pfx
+inventory.ini
+evidence-private/
+private/
+__pycache__/

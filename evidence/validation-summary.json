@@ -1,0 +1,342 @@
+{
+  "project": "Shanghai 2026 Linux Infrastructure Lab",
+  "author": "ManiRootNet",
+  "captured_utc": "2026-10-26T11:44:20.827495+00:00",
+  "environment": "Independent VMware practice lab based on WorldSkills Shanghai 2026 Module A",
+  "automated_assertions": {
+    "passed": 60,
+    "total": 60,
+    "service_access_and_tls": 39,
+    "dns_records": 14,
+    "directory_backend_and_submission_policy": 7
+  },
+  "service_checks": [
+    {
+      "test": "HTTPS main site with certificate validation",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "HTTPS 6 MiB file",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "Internal website rejects anonymous",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "Internal HTTPS LDAP user1",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "FTPS LDAP authentication and jail user1",
+      "passed": true,
+      "observed": "error_perm: 530 Login incorrect."
+    },
+    {
+      "test": "SMTP STARTTLS LDAP user1",
+      "passed": true,
+      "observed": "SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')"
+    },
+    {
+      "test": "IMAP STARTTLS LDAP user1",
+      "passed": true,
+      "observed": "error: b'[AUTHENTICATIONFAILED] Authentication failed.'"
+    },
+    {
+      "test": "Internal HTTPS LDAP user2",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "FTPS LDAP authentication and jail user2",
+      "passed": true,
+      "observed": "error_perm: 530 Login incorrect."
+    },
+    {
+      "test": "SMTP STARTTLS LDAP user2",
+      "passed": true,
+      "observed": "SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')"
+    },
+    {
+      "test": "IMAP STARTTLS LDAP user2",
+      "passed": true,
+      "observed": "error: b'[AUTHENTICATIONFAILED] Authentication failed.'"
+    },
+    {
+      "test": "Internal HTTPS LDAP user3",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "FTPS LDAP authentication and jail user3",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "SMTP STARTTLS LDAP user3",
+      "passed": true,
+      "observed": "SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')"
+    },
+    {
+      "test": "IMAP STARTTLS LDAP user3",
+      "passed": true,
+      "observed": "error: b'[AUTHENTICATIONFAILED] Authentication failed.'"
+    },
+    {
+      "test": "Internal HTTPS LDAP user4",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "FTPS LDAP authentication and jail user4",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "SMTP STARTTLS LDAP user4",
+      "passed": true,
+      "observed": "SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')"
+    },
+    {
+      "test": "IMAP STARTTLS LDAP user4",
+      "passed": true,
+      "observed": "error: b'[AUTHENTICATIONFAILED] Authentication failed.'"
+    },
+    {
+      "test": "Internal HTTPS LDAP user5",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "FTPS LDAP authentication and jail user5",
+      "passed": true,
+      "observed": "error_perm: 530 Login incorrect."
+    },
+    {
+      "test": "SMTP STARTTLS LDAP user5",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "IMAP STARTTLS LDAP user5",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "Internal HTTPS LDAP user6",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "FTPS LDAP authentication and jail user6",
+      "passed": true,
+      "observed": "error_perm: 530 Login incorrect."
+    },
+    {
+      "test": "SMTP STARTTLS LDAP user6",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "IMAP STARTTLS LDAP user6",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "Plain FTP password authentication rejected",
+      "passed": true,
+      "observed": "error_perm: 550 SSL/TLS required on the control channel"
+    },
+    {
+      "test": "SMTP submission without STARTTLS rejected",
+      "passed": true,
+      "observed": "SMTPNotSupportedError: SMTP AUTH extension not supported by server."
+    },
+    {
+      "test": "SMTP unauthenticated sender rejected",
+      "passed": true,
+      "observed": "False"
+    },
+    {
+      "test": "IMAP plaintext authentication rejected",
+      "passed": true,
+      "observed": "error: b'[PRIVACYREQUIRED] Cleartext authentication disallowed on non-secure (SSL/TLS) connections.'"
+    },
+    {
+      "test": "Document download outside CLIENT rejected",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "LDAP plaintext listener disabled",
+      "passed": true,
+      "observed": "ConnectionRefusedError: [Errno 111] Connection refused"
+    },
+    {
+      "test": "LDAPS bind user1",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "LDAPS bind user2",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "LDAPS bind user3",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "LDAPS bind user4",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "LDAPS bind user5",
+      "passed": true,
+      "observed": "True"
+    },
+    {
+      "test": "LDAPS bind user6",
+      "passed": true,
+      "observed": "True"
+    }
+  ],
+  "dns_checks": [
+    {
+      "name": "shenzhen.wsc",
+      "answer": "192.168.20.10",
+      "passed": true
+    },
+    {
+      "name": "internal.shenzhen.wsc",
+      "answer": "192.168.20.10",
+      "passed": true
+    },
+    {
+      "name": "ntp.shenzhen.wsc",
+      "answer": "192.168.10.10",
+      "passed": true
+    },
+    {
+      "name": "log.shenzhen.wsc",
+      "answer": "192.168.10.10",
+      "passed": true
+    },
+    {
+      "name": "ldap.shenzhen.wsc",
+      "answer": "192.168.10.10",
+      "passed": true
+    },
+    {
+      "name": "monitoring.shenzhen.wsc",
+      "answer": "192.168.10.11",
+      "passed": true
+    },
+    {
+      "name": "git.shenzhen.wsc",
+      "answer": "192.168.10.11",
+      "passed": true
+    },
+    {
+      "name": "fileshare.shenzhen.wsc",
+      "answer": "192.168.10.11",
+      "passed": true
+    },
+    {
+      "name": "ftp.shenzhen.wsc",
+      "answer": "192.168.20.10",
+      "passed": true
+    },
+    {
+      "name": "mail.shenzhen.wsc",
+      "answer": "192.168.20.10",
+      "passed": true
+    },
+    {
+      "name": "vpn.shenzhen.wsc",
+      "answer": "92.8.17.113",
+      "passed": true
+    },
+    {
+      "name": "shenzhen.wsc TTL",
+      "answer": "shenzhen.wsc.\t\t360\tIN\tA\t192.168.20.10",
+      "passed": true
+    },
+    {
+      "name": "internal.shenzhen.wsc TTL",
+      "answer": "internal.shenzhen.wsc.\t360\tIN\tA\t192.168.20.10",
+      "passed": true
+    },
+    {
+      "name": "MX",
+      "answer": "10 mail.shenzhen.wsc.",
+      "passed": true
+    }
+  ],
+  "directory_backend_checks": [
+    {
+      "test": "user3 old password rejected after directory password rotation",
+      "passed": true
+    },
+    {
+      "test": "user3 new directory password accepted by service",
+      "passed": true
+    },
+    {
+      "test": "user3 original directory password restored and service login succeeds",
+      "passed": true
+    },
+    {
+      "test": "user5 old password rejected after directory password rotation",
+      "passed": true
+    },
+    {
+      "test": "user5 new directory password accepted by service",
+      "passed": true
+    },
+    {
+      "test": "user5 original directory password restored and service login succeeds",
+      "passed": true
+    },
+    {
+      "test": "Unauthenticated submission rejected at recipient stage",
+      "passed": true,
+      "smtp_code": 554
+    }
+  ],
+  "operational_drills": {
+    "openvpn": "Two authorized directory users connected; non-member rejected; tunnel routes, HTTPS and client SSH verified; disconnect removed the tunnel",
+    "connection_limit": "Five combined HTTP/HTTPS connections established from one IP; sixth timed out",
+    "download": "6291456 bytes in 26.517925 seconds; 237252 bytes/second",
+    "upload": "6291456 bytes accepted with HTTP 204 in 26.804226 seconds; 234718 bytes/second",
+    "raid5": "Three new 1 GiB disks; ext4; clean [UUU]; persistent assembly and mount verified after reboot",
+    "data_integrity": "Both original NFS files retained identical SHA-256 hashes; client read/write verified",
+    "port_scan": "Source entered five-minute ban set; absent after expiry",
+    "ssh_protection": "Five controlled failures triggered an iptables DROP ban; own probe source unbanned after observation",
+    "icmp": "Five of seven rapid probes answered; TTL 128",
+    "recovery": "Four injected live drifts repaired; repeat run changed=0, failed=0"
+  },
+  "certificate": {
+    "sha256": "74:B8:94:C4:D6:6A:8B:99:08:71:49:F6:A3:B5:02:FB:D8:68:E9:19:0E:EF:B8:4F:A0:55:FA:FB:F8:C5:3E:39",
+    "dns_names": [
+      "shenzhen.wsc",
+      "*.shenzhen.wsc"
+    ],
+    "validity_days": 365,
+    "key_usage": [
+      "digitalSignature",
+      "keyEncipherment"
+    ],
+    "extended_key_usage": [
+      "serverAuth",
+      "clientAuth"
+    ]
+  },
+  "scope": "Counts describe the named assertions in this evidence set, not an official competition score."
+}

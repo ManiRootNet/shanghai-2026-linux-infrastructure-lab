@@ -1,0 +1,4 @@
+Fresh checkout recovery replay
+Captured UTC: 2026-10-26T11:40:54.949948+00:00
+Internal Git commit: d8e1b193b19fa31ca7d91b3fe18cdd124fa031f3
+sha-gw-1                   : ok=15   changed=0    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   

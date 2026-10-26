@@ -1,0 +1,43 @@
+Combined HTTP/HTTPS connection limit and NFS read/write
+Captured UTC: 2026-10-26T11:11:24.686810+00:00
+Source: szx-clt-1
+{"http_https_combined_limit": [{"connection": 1, "connected": true}, {"connection": 2, "connected": true}, {"connection": 3, "connected": true}, {"connection": 4, "connected": true}, {"connection": 5, "connected": true}, {"connection": 6, "connected": false, "reason": "timeout"}]}
+NFS read/write: True
+
+HTTP upload shaping
+Captured UTC: 2026-10-26T11:24:08.319721+00:00
+Source: szx-clt-1
+HTTP/1.1 204 No Content
+Date: Mon, 26 Oct 2026 11:23:42 GMT
+Server: Apache/2.4.68 (Debian)
+X-Audit-Bytes: 6291456
+
+UPLOAD http=204 bytes=6291456 seconds=26.804226 bytes_per_sec=234718
+
+VPN access with strict reverse-path validation
+Captured UTC: 2026-10-26T11:24:12.272154+00:00
+Source: sha-clt-1
+Connected
+VPN_STRICT_RPF_EXIT=0
+VPN STRICT RPF HTTPS 200
+Disconnected
+
+ICMP rate limit and reply TTL
+Captured UTC: 2026-10-26T11:13:12.030901+00:00
+Source: szx-gw-1
+PING 92.8.17.114 (92.8.17.114) 56(84) bytes of data.
+64 bytes from 92.8.17.114: icmp_seq=1 ttl=128 time=36.4 ms
+64 bytes from 92.8.17.114: icmp_seq=2 ttl=128 time=0.269 ms
+64 bytes from 92.8.17.114: icmp_seq=3 ttl=128 time=0.345 ms
+64 bytes from 92.8.17.114: icmp_seq=4 ttl=128 time=0.334 ms
+64 bytes from 92.8.17.114: icmp_seq=5 ttl=128 time=0.263 ms
+
+--- 92.8.17.114 ping statistics ---
+7 packets transmitted, 5 received, 28.5714% packet loss, time 929ms
+rtt min/avg/max/mdev = 0.263/7.524/36.413/14.444 ms
+
+Controlled drift recovery and repeat run
+Captured UTC: 2026-10-26T11:16:07.655845+00:00
+sha-gw-1                   : ok=17   changed=4    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+sha-gw-1                   : ok=15   changed=0    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+

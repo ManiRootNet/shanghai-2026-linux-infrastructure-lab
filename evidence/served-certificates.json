@@ -1,0 +1,29 @@
+{
+  "captured_utc": "2026-10-26T11:46:16.971727+00:00",
+  "tls_endpoints": [
+    {
+      "service": "LDAPS",
+      "sha256": "74b894c4d66a8b99087149f6a3b502fbd868e9190eefb84fa055fafbf8c53e39"
+    },
+    {
+      "service": "HTTPS",
+      "sha256": "74b894c4d66a8b99087149f6a3b502fbd868e9190eefb84fa055fafbf8c53e39"
+    },
+    {
+      "service": "Explicit FTPS",
+      "sha256": "74b894c4d66a8b99087149f6a3b502fbd868e9190eefb84fa055fafbf8c53e39"
+    },
+    {
+      "service": "SMTP STARTTLS",
+      "sha256": "74b894c4d66a8b99087149f6a3b502fbd868e9190eefb84fa055fafbf8c53e39"
+    },
+    {
+      "service": "IMAP STARTTLS",
+      "sha256": "74b894c4d66a8b99087149f6a3b502fbd868e9190eefb84fa055fafbf8c53e39"
+    },
+    {
+      "service": "Rsyslog mTLS",
+      "sha256": "74b894c4d66a8b99087149f6a3b502fbd868e9190eefb84fa055fafbf8c53e39"
+    }
+  ]
+}
