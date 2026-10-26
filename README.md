@@ -2,7 +2,7 @@
 
 # Shanghai 2026 · Linux Infrastructure Lab
 
-A seven-node Debian lab connecting Shanghai and Shenzhen, built as part of my preparation for **WorldSkills IT Network Systems Administration**.
+A seven-node Debian lab connecting Shanghai and Shenzhen, built as part of my preparation for **WorldSkills Aichi 2028 — IT Network Systems Administration**. The reference scenario is Shanghai 2026 Module A.
 
 This project brings routing, directory-backed access, encrypted services, monitoring, resilient storage and recovery into one working environment. The evidence follows traffic and authentication across the lab, including permitted access, rejected access and recovery after deliberate configuration drift.
 

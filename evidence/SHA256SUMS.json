@@ -1,7 +1,5 @@
 {
   ".gitignore": "4bd0384c67db05c912fe86f0531a299283bc4c5d7ead5dab512720b310bbfa83",
-  "NOTICE.md": "a85bb384884c757c370c42b0539a20f89e4bebe4238801eb45383b52187deec4",
-  "README.md": "33b50451539817aea285c7f70fc63d2f77b47c70e9e2cbbceadb7044a67ee40f",
   "assets/grafana-live.jpg": "355a2f885123fcd7190a83bfc93758b16256f3f480151af15ebd7e9ab16f56f4",
   "assets/identity-verification.jpg": "3994a261649c6c50bd03987b6c214f11fd26081e115155c77e87837ff5736f7d",
   "assets/network-verification.jpg": "9af02d837c5dcb4c660c71599842d349487ee3d23ab1d23f7eb0dfbaa27df5fd",
@@ -21,5 +19,7 @@
   "evidence/served-certificates.json": "e9de35e65653cafaf9a952b1eafa9bddcefcd46b6a100881f98a913ee6654373",
   "evidence/storage-integrity.txt": "dd7304a3ec488a4d52b1b05f91a01df76246a7d972e946dce7cb4fe699050384",
   "evidence/time-synchronization.json": "2abe7336ebf0bad0a51dfbb3f1e810997685049dfbb78219a10ed8660f54a826",
-  "evidence/validation-summary.json": "ebb522d3d0bc6c863dd43c814eea0fb7a9831452d26467b32774f0309a87f059"
+  "evidence/validation-summary.json": "d530da89681217fcf65023526530c44bb0a1fd795f9521e298df2657cf7fcb9c",
+  "NOTICE.md": "a85bb384884c757c370c42b0539a20f89e4bebe4238801eb45383b52187deec4",
+  "README.md": "d8b7db4823ac2dc8efdad4eb4a9424f23cacff711b3489689a7eeaa46a270e8c"
 }

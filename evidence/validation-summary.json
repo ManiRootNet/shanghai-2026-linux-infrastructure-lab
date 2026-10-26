@@ -14,197 +14,236 @@
     {
       "test": "HTTPS main site with certificate validation",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow HTTPS with successful certificate verification"
     },
     {
       "test": "HTTPS 6 MiB file",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Retrieve the complete 6 MiB test object over HTTPS"
     },
     {
       "test": "Internal website rejects anonymous",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Reject an anonymous request to the internal application"
     },
     {
       "test": "Internal HTTPS LDAP user1",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow the directory user to authenticate to the internal HTTPS application"
     },
     {
       "test": "FTPS LDAP authentication and jail user1",
       "passed": true,
-      "observed": "error_perm: 530 Login incorrect."
+      "observed": "error_perm: 530 Login incorrect.",
+      "expected_outcome": "Reject the user because they are not in the FTP authorization group"
     },
     {
       "test": "SMTP STARTTLS LDAP user1",
       "passed": true,
-      "observed": "SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')"
+      "observed": "SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')",
+      "expected_outcome": "Reject the user because they are not in the mail authorization group"
     },
     {
       "test": "IMAP STARTTLS LDAP user1",
       "passed": true,
-      "observed": "error: b'[AUTHENTICATIONFAILED] Authentication failed.'"
+      "observed": "error: b'[AUTHENTICATIONFAILED] Authentication failed.'",
+      "expected_outcome": "Reject the user because they are not in the mail authorization group"
     },
     {
       "test": "Internal HTTPS LDAP user2",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow the directory user to authenticate to the internal HTTPS application"
     },
     {
       "test": "FTPS LDAP authentication and jail user2",
       "passed": true,
-      "observed": "error_perm: 530 Login incorrect."
+      "observed": "error_perm: 530 Login incorrect.",
+      "expected_outcome": "Reject the user because they are not in the FTP authorization group"
     },
     {
       "test": "SMTP STARTTLS LDAP user2",
       "passed": true,
-      "observed": "SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')"
+      "observed": "SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')",
+      "expected_outcome": "Reject the user because they are not in the mail authorization group"
     },
     {
       "test": "IMAP STARTTLS LDAP user2",
       "passed": true,
-      "observed": "error: b'[AUTHENTICATIONFAILED] Authentication failed.'"
+      "observed": "error: b'[AUTHENTICATIONFAILED] Authentication failed.'",
+      "expected_outcome": "Reject the user because they are not in the mail authorization group"
     },
     {
       "test": "Internal HTTPS LDAP user3",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow the directory user to authenticate to the internal HTTPS application"
     },
     {
       "test": "FTPS LDAP authentication and jail user3",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow FTP-group authentication and verify the jailed home"
     },
     {
       "test": "SMTP STARTTLS LDAP user3",
       "passed": true,
-      "observed": "SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')"
+      "observed": "SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')",
+      "expected_outcome": "Reject the user because they are not in the mail authorization group"
     },
     {
       "test": "IMAP STARTTLS LDAP user3",
       "passed": true,
-      "observed": "error: b'[AUTHENTICATIONFAILED] Authentication failed.'"
+      "observed": "error: b'[AUTHENTICATIONFAILED] Authentication failed.'",
+      "expected_outcome": "Reject the user because they are not in the mail authorization group"
     },
     {
       "test": "Internal HTTPS LDAP user4",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow the directory user to authenticate to the internal HTTPS application"
     },
     {
       "test": "FTPS LDAP authentication and jail user4",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow FTP-group authentication and verify the jailed home"
     },
     {
       "test": "SMTP STARTTLS LDAP user4",
       "passed": true,
-      "observed": "SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')"
+      "observed": "SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')",
+      "expected_outcome": "Reject the user because they are not in the mail authorization group"
     },
     {
       "test": "IMAP STARTTLS LDAP user4",
       "passed": true,
-      "observed": "error: b'[AUTHENTICATIONFAILED] Authentication failed.'"
+      "observed": "error: b'[AUTHENTICATIONFAILED] Authentication failed.'",
+      "expected_outcome": "Reject the user because they are not in the mail authorization group"
     },
     {
       "test": "Internal HTTPS LDAP user5",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow the directory user to authenticate to the internal HTTPS application"
     },
     {
       "test": "FTPS LDAP authentication and jail user5",
       "passed": true,
-      "observed": "error_perm: 530 Login incorrect."
+      "observed": "error_perm: 530 Login incorrect.",
+      "expected_outcome": "Reject the user because they are not in the FTP authorization group"
     },
     {
       "test": "SMTP STARTTLS LDAP user5",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow mail-group authentication over STARTTLS"
     },
     {
       "test": "IMAP STARTTLS LDAP user5",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow mail-group authentication over STARTTLS"
     },
     {
       "test": "Internal HTTPS LDAP user6",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow the directory user to authenticate to the internal HTTPS application"
     },
     {
       "test": "FTPS LDAP authentication and jail user6",
       "passed": true,
-      "observed": "error_perm: 530 Login incorrect."
+      "observed": "error_perm: 530 Login incorrect.",
+      "expected_outcome": "Reject the user because they are not in the FTP authorization group"
     },
     {
       "test": "SMTP STARTTLS LDAP user6",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow mail-group authentication over STARTTLS"
     },
     {
       "test": "IMAP STARTTLS LDAP user6",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow mail-group authentication over STARTTLS"
     },
     {
       "test": "Plain FTP password authentication rejected",
       "passed": true,
-      "observed": "error_perm: 550 SSL/TLS required on the control channel"
+      "observed": "error_perm: 550 SSL/TLS required on the control channel",
+      "expected_outcome": "Reject FTP password authentication without TLS"
     },
     {
       "test": "SMTP submission without STARTTLS rejected",
       "passed": true,
-      "observed": "SMTPNotSupportedError: SMTP AUTH extension not supported by server."
+      "observed": "SMTPNotSupportedError: SMTP AUTH extension not supported by server.",
+      "expected_outcome": "Reject SMTP authentication without STARTTLS"
     },
     {
       "test": "SMTP unauthenticated sender rejected",
       "passed": true,
-      "observed": "False"
+      "observed": "False",
+      "expected_outcome": "Reject unauthenticated SMTP submission"
     },
     {
       "test": "IMAP plaintext authentication rejected",
       "passed": true,
-      "observed": "error: b'[PRIVACYREQUIRED] Cleartext authentication disallowed on non-secure (SSL/TLS) connections.'"
+      "observed": "error: b'[PRIVACYREQUIRED] Cleartext authentication disallowed on non-secure (SSL/TLS) connections.'",
+      "expected_outcome": "Reject IMAP authentication without STARTTLS"
     },
     {
       "test": "Document download outside CLIENT rejected",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Reject document download from outside the permitted CLIENT network"
     },
     {
       "test": "LDAP plaintext listener disabled",
       "passed": true,
-      "observed": "ConnectionRefusedError: [Errno 111] Connection refused"
+      "observed": "ConnectionRefusedError: [Errno 111] Connection refused",
+      "expected_outcome": "Refuse a connection to the plaintext LDAP listener"
     },
     {
       "test": "LDAPS bind user1",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow a directory bind over TLS"
     },
     {
       "test": "LDAPS bind user2",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow a directory bind over TLS"
     },
     {
       "test": "LDAPS bind user3",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow a directory bind over TLS"
     },
     {
       "test": "LDAPS bind user4",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow a directory bind over TLS"
     },
     {
       "test": "LDAPS bind user5",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow a directory bind over TLS"
     },
     {
       "test": "LDAPS bind user6",
       "passed": true,
-      "observed": "True"
+      "observed": "True",
+      "expected_outcome": "Allow a directory bind over TLS"
     }
   ],
   "dns_checks": [
@@ -345,5 +384,6 @@
     "directory_e2e": 13,
     "web_redirect_and_extensions": 8,
     "evidence": "extended-checks.json"
-  }
+  },
+  "result_interpretation": "A passed assertion means the observed behavior matched its expected outcome. Deliberate authentication and policy rejections are successful negative tests. The observed field preserves the original runner output."
 }
