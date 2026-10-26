@@ -1,14 +1,12 @@
 # Visual verification evidence
 
-The Prometheus and Grafana images are direct captures of the running service interfaces. The other images are screenshots of verification reports built from recorded live test output, with source nodes and UTC capture times included. The reports retain the measured values and observed outcomes.
+The Prometheus image is a direct capture of the running service interface. The other images are screenshots of verification reports built from recorded live test output, with source nodes and UTC capture times included. The reports retain the measured values and observed outcomes.
 
 ## Monitoring coverage
 
 ![Actual Prometheus target-health interface](../assets/prometheus-targets.jpg)
 
 Four Node Exporters are UP. Prometheus also monitors itself.
-
-![Actual Grafana dashboard](../assets/grafana-live.jpg)
 
 ## Directory-backed authorization
 

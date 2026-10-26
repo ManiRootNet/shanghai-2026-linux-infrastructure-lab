@@ -1,6 +1,5 @@
 {
   ".gitignore": "4bd0384c67db05c912fe86f0531a299283bc4c5d7ead5dab512720b310bbfa83",
-  "assets/grafana-live.jpg": "355a2f885123fcd7190a83bfc93758b16256f3f480151af15ebd7e9ab16f56f4",
   "assets/identity-verification.jpg": "3994a261649c6c50bd03987b6c214f11fd26081e115155c77e87837ff5736f7d",
   "assets/network-verification.jpg": "9af02d837c5dcb4c660c71599842d349487ee3d23ab1d23f7eb0dfbaa27df5fd",
   "assets/overview.svg": "6fa3ac0f380d6632867f9a9a4a9fafdfffbce2767385c6cd1cd574a663f7ddc3",
@@ -11,7 +10,7 @@
   "docs/architecture.md": "a9e2f3084e2946b81986a86aeb98e8c5108e1a2df67c58e36cd8c86bbfefc19c",
   "docs/engineering-notes.md": "a28aacf689d1459468d299af35c62e7db7745f47b5a2e00ef4fe72fc06c1663b",
   "docs/validation.md": "5fe30d1782a5535cae88ffb45fde3de485a238006054724cbed46a1c7b9ca718",
-  "docs/visual-evidence.md": "d331407379dd46bdeaa41bb1afe1c0a5405aa0d260278d5bdd0cccab85a12804",
+  "docs/visual-evidence.md": "ca603ab87d52b2351743a778e6d37faf65068fc18c0bf91dfad904b3c42b8668",
   "evidence/extended-checks.json": "c89b5f90fa34711ddcaa6c02db73ac9861b2dfe543a4afe03b149cc1957e7095",
   "evidence/monitoring-targets.json": "e0b4b95779e502a17d760433521100c0521ece9fd44888f176bd1c9719cf30e9",
   "evidence/recovery-replay.txt": "846a171727b8d5b8c3a48710ffdaae63fb292cb772e5dd1d2f8d4ce8929de41e",
@@ -21,5 +20,5 @@
   "evidence/time-synchronization.json": "2abe7336ebf0bad0a51dfbb3f1e810997685049dfbb78219a10ed8660f54a826",
   "evidence/validation-summary.json": "d530da89681217fcf65023526530c44bb0a1fd795f9521e298df2657cf7fcb9c",
   "NOTICE.md": "a85bb384884c757c370c42b0539a20f89e4bebe4238801eb45383b52187deec4",
-  "README.md": "d8b7db4823ac2dc8efdad4eb4a9424f23cacff711b3489689a7eeaa46a270e8c"
+  "README.md": "0f4d2c0e97661c8951c5c0cea9690563b41afb7a809dea43e4bcc005a723447e"
 }

@@ -54,7 +54,7 @@ The counts refer to the checks documented in this repository. They are independe
 
 ## Live observability
 
-![Actual Grafana dashboard displaying live gateway metrics](assets/grafana-live.jpg)
+![Actual Prometheus interface showing all four Node Exporters UP](assets/prometheus-targets.jpg)
 
 A real capture from the running lab. [Target evidence](evidence/monitoring-targets.json) records all four monitored nodes.
 
