@@ -68,4 +68,4 @@ A real capture from the running lab. [Target evidence](evidence/monitoring-targe
 
 **Related portfolio:** [Shanghai 2026 Enterprise Network Lab · Cisco](https://github.com/ManiRootNet/shanghai-2026-enterprise-network-lab)
 
-*Maintained by [ManiRootNet](https://github.com/ManiRootNet).*
+*Maintained by [Mani Nazari](https://github.com/ManiRootNet) · [LinkedIn](https://www.linkedin.com/in/manirootnet/).*
